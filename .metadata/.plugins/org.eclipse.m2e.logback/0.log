@@ -264,3 +264,5 @@
 2024-04-19 09:33:38,685 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\TITV\Hibernate\Hibernate_12\src\test\resources
 2024-04-19 09:34:13,493 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\TITV\Hibernate\Hibernate_12\src\main\resources
 2024-04-19 09:34:13,496 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\TITV\Hibernate\Hibernate_12\src\test\resources
+2024-04-19 09:34:59,850 [Worker-43: Launching TestDelete] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\TITV\Hibernate\Hibernate_12\src\main\resources
+2024-04-19 09:34:59,854 [Worker-43: Launching TestDelete] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\TITV\Hibernate\Hibernate_12\src\test\resources
