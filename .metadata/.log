@@ -1736,3 +1736,15 @@ java.lang.IllegalStateException: Disconnected before saving. https://bugs.eclips
 		at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
 		at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
 		... 20 more
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2024-04-19 10:50:45.540
+!MESSAGE dr: [376:13] doc: [389] 
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.computePartitioning(AbstractDocument.java:1301)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.computePartitioning(SynchronizableDocument.java:257)
+	at org.eclipse.jface.text.TextUtilities.computePartitioning(TextUtilities.java:439)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor.computePartitioning(DirtyRegionProcessor.java:336)
+	at org.jboss.tools.common.validation.java.JavaDirtyRegionProcessor.isJavaElementValidationRequired(JavaDirtyRegionProcessor.java:535)
+	at org.jboss.tools.common.validation.java.JavaDirtyRegionProcessor.endProcessing(JavaDirtyRegionProcessor.java:502)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:700)
