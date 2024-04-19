@@ -1,0 +1,13 @@
+package test;
+
+import java.sql.Date;
+
+import model.Cat;
+
+public class TestUpdate {
+	public static void main(String[] args) {
+		Cat cat = new Cat();
+		cat.setId(3);
+		cat.setDateOfBirth(new Date(System.currentTimeMillis()));
+	}
+}

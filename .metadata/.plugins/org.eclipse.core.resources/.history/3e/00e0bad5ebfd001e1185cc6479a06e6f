@@ -1,0 +1,54 @@
+package dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import model.Cat;
+import utils.HibernateUtils;
+
+public class CatDAO implements DAOInterface<Cat> {
+
+	@Override
+	public List<Cat> selectAll() {
+		try {
+			SessionFactory sessionFactory = HibernateUtils.getSessionFactory();
+			if(sessionFactory!=null) {
+				Session session = sessionFactory.openSession();
+				Transaction tr = session.beginTransaction();
+				
+				tr.commit();
+				session.close();
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+	@Override
+	public Cat selectById(Cat t) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean inser(Cat t) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean update(Cat t) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean delete(Cat t) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

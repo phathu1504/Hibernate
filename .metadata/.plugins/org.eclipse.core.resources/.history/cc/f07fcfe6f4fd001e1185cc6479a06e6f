@@ -1,0 +1,13 @@
+package test;
+
+import java.sql.Date;
+
+import dao.CatDAO;
+import model.Cat;
+
+public class TestInsert {
+	Cat cat = new Cat("Lông xù", new Date(2004,01, 05), false);
+	
+	CatDAO dao = new CatDAO();
+	
+}

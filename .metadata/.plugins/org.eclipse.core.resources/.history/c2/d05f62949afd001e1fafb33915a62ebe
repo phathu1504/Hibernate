@@ -1,0 +1,24 @@
+package model;
+
+import java.sql.Date;
+
+public class Cat {
+	private Integer id;
+	private String name;
+	private Date dateOfBirth;
+	private Boolean sex;
+
+	public Cat() {
+
+	}
+
+	public Cat(String name, Date dateOfBirth, Boolean sex) {
+		super();
+		this.name = name;
+		this.dateOfBirth = dateOfBirth;
+		this.sex = sex;
+	}
+	
+	
+
+}
